@@ -12,7 +12,7 @@ Feature: Resource Privacy Assessment Result
         And I should see an element with xpath "//select[@name='request_privacy_assessment']/following::label[text()='Privacy assessment result']"
         And I should see an element with xpath "//input[@name='privacy_assessment_result' and @readonly]"
         And I should see an element with xpath "//label[text()='Privacy assessment result']/following::a[text()[contains(.,'Privacy Assessment Report')]]"
-        And I should see "Refer to the linked Privacy Assessment Report for details of the assessment."
+        And I should see "Leave this field blank. It is automatically populated with the URL of the privacy assessment report (if requested and completed)."
         And I should see an element with xpath "//label[text()='Privacy assessment result']/following::a[text()='here']"
 
     @fixture.dataset_with_schema::name=package-with-csv-res::owner_org=test-organisation
